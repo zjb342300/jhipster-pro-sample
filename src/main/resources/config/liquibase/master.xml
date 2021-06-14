@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql, mariadb"/>
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql, mariadb"/>
+    <property name="clobType" value="clob" dbms="h2"/>
+    <property name="clobType" value="clob" dbms="mysql, oracle, mssql, mariadb, postgresql"/>
+    <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
+    <property name="datetimeType" value="datetime(6)" dbms="mysql, mariadb"/>
+    <property name="datetimeType" value="datetime" dbms="oracle, mssql, postgresql, h2"/>
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142635_added_entity_CommonString.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142636_added_entity_CommonTableField.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142637_added_entity_CommonFloat.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142638_added_entity_OssConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142639_added_entity_CommonDouble.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142640_added_entity_ApiPermission.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142641_added_entity_CommonExtData.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142642_added_entity_UploadImage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142643_added_entity_SmsConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142644_added_entity_UReportFile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142645_added_entity_Department.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142646_added_entity_StatisticsApi.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142647_added_entity_BusinessType.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142648_added_entity_CommonZonedDateTime.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142649_added_entity_CommonTableRelationship.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142650_added_entity_CommonBoolean.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142651_added_entity_CommonBigDecimal.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142652_added_entity_CommonLong.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142653_added_entity_CommonLocalDate.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142654_added_entity_ViewPermission.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142655_added_entity_CommonConditionItem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142656_added_entity_AdministrativeDivision.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142657_added_entity_CommonTable.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142658_added_entity_CommonTextBlob.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142659_added_entity_CommonInteger.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142700_added_entity_ResourceCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142701_added_entity_UploadFile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142702_added_entity_Position.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142703_added_entity_DataDictionary.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142704_added_entity_CommonCondition.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142705_added_entity_GpsInfo.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/00000000000099_added_entity_constraints_ApiPermission_ViewPermission.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142636_added_entity_constraints_CommonTableField.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142640_added_entity_constraints_ApiPermission.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142642_added_entity_constraints_UploadImage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142644_added_entity_constraints_UReportFile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142645_added_entity_constraints_Department.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142646_added_entity_constraints_StatisticsApi.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142649_added_entity_constraints_CommonTableRelationship.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142654_added_entity_constraints_ViewPermission.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142655_added_entity_constraints_CommonConditionItem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142656_added_entity_constraints_AdministrativeDivision.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142657_added_entity_constraints_CommonTable.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142700_added_entity_constraints_ResourceCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142701_added_entity_constraints_UploadFile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142703_added_entity_constraints_DataDictionary.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614142704_added_entity_constraints_CommonCondition.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+    <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
+</databaseChangeLog>
